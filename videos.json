@@ -1,0 +1,13 @@
+[
+    {"id_user": "jean-michel", "bibli": [
+        {"id_chor": 1, "code_chor": "11352744121"},
+        {"id_chor": 2, "code_chor": "52421174"},
+        {"id_chor": 3, "code_chor": "5214121174"},
+        {"id_chor": 4, "code_chor": "27411243511"}
+    ]},
+    {"id_user": "lola", "bibli": [
+        {"id_chor": 1, "code_chor": "2744121"},
+        {"id_chor": 2, "code_chor": "524274"},
+        {"id_chor": 3, "code_chor": "14121174"}
+    ]}
+]

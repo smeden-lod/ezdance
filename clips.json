@@ -1,0 +1,30 @@
+[
+    {
+        "IdVid": 1,
+        "Path":"media/Jexo1m.mp4"
+    },
+    {
+        "IdVid": 2,
+        "Path":"media/Jexo2m.mp4"
+    },
+    {
+        "IdVid": 3,
+        "Path":"media/Jexo3.mp4"
+    },
+    {
+        "IdVid": 4,
+        "Path":"media/Jexo4.mp4"
+    },
+    {
+        "IdVid": 5.1,
+        "Path":"media/Jexo5.1.mp4"
+    },
+    {
+        "IdVid": 5.2,
+        "Path":"media/Jexo5.2m.mp4"
+    },
+    {
+        "IdVid": 6,
+        "Path":"media/Jexo6.mp4"
+    }
+]
