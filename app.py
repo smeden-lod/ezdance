@@ -33,7 +33,7 @@ def composer():
 
 @app.route("/consulter")
 def consulter(): 
-    return render_template("consulter.html", chors = videos_database["bibli"])
+    return render_template("consulter.html", chors = videos_database)
 
 @app.route("/accueil")
 def accueil():
