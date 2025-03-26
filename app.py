@@ -5,19 +5,10 @@ import json, os
 SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
 app = Flask(__name__, static_url_path='', static_folder="./static")
 
-with open(os.path.join(SITE_ROOT, "utilisateurs.json"), "r") as users_database_file:
-    user_database = json.load(users_database_file)
-
-def user_database_write() -> bool:
-    with open(os.path.join(SITE_ROOT,"utilisateurs.json"), "w") as user_database_file:
-        json.dump(user_database, user_database_file)
 
 with open(os.path.join(SITE_ROOT,"videos.json"), "r") as videos_database_file:
     videos_database = json.load(videos_database_file)
 
-def videos_database_write() -> bool:
-    with open(os.path.join(SITE_ROOT,"videos.json"), "w") as videos_database_file:
-        json.dump(user_database, videos_database, videos_database_file)
 
 with open(os.path.join(SITE_ROOT,"clips.json"), "r") as clips_database_file:
     clips_database = json.load(clips_database_file)
