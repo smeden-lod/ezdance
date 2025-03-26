@@ -33,21 +33,10 @@ def composer():
 
 @app.route("/consulter")
 def consulter(): 
-    return render_template("consulter.html", chors = videos_database[0]["bibli"])
-
-@app.route("/login")
-def login(): 
-    return render_template("login.html")
-
-@app.route("/signup")
-def signup(): 
-    return render_template("signup.html")
+    return render_template("consulter.html", chors = videos_database["bibli"])
 
 @app.route("/accueil")
 def accueil():
-    #check_json
-    # if ok:
-        # session['username'] = username  
     return render_template("accueil.html")
       
 @app.route("/play/<int:code>")
