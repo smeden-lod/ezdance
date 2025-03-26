@@ -1,4 +1,4 @@
-# version simplifiée de ezDance
+# welcome to ezDance
 
 ## pour exécuter
 taper `python -m flask --debug run` dans un terminal ouvert dans le dossier courant. Puis Ctrl-click sur l'url http://127.0.0.1:5000
