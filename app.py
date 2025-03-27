@@ -22,8 +22,9 @@ def save():
     with open(os.path.join(SITE_ROOT,"videos.json"), "r") as f:
         b = json.load(f)
     b.append({"id_chor": len(b)+1, "code_chor": d})
-     with open(os.path.join(SITE_ROOT,"videos.json"), "w") as f:
-        json.dump(b, f)   
+    with open(os.path.join(SITE_ROOT,"videos.json"), "w") as f:
+        json.dump(b, f)
+    return render_template("saved.html")
 
 @app.route("/consulter")
 def consulter():
