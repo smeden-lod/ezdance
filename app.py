@@ -9,13 +9,6 @@ app = Flask(__name__, static_url_path='', static_folder="./static")
 with open(os.path.join(SITE_ROOT,"videos.json"), "r") as videos_database_file:
     videos_database = json.load(videos_database_file)
 
-with open(os.path.join(SITE_ROOT,"clips.json"), "r") as clips_database_file:
-    clips_database = json.load(clips_database_file)
-
-def videos_database_write() -> bool:
-    with open(os.path.join(SITE_ROOT,"videos.json"), "w") as videos_database_file:
-        json.dump(user_database, videos_database, videos_database_file)
-  
 
 @app.route("/")
 def index(): 
@@ -23,7 +16,6 @@ def index():
 
 @app.route("/composer")
 def composer(): 
-    videos_database.append({"id_chor" : len(videos_database) + 1, "code_chor" : "24537"})
     return render_template("composer.html")
 
 @app.route("/consulter")
