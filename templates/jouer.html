@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EzD:player</title>
+<link rel="stylesheet" href="{{url_for('static', filename = 'ezdancing.css')}}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="/">.:accueil</a>
+  <h1>Jouer une choré</h1>
+  
+  <div id="video-list">Le code de la choré est <span id="code_chor">{{vids}}</span></div>
+  <video id="video-player" controls width="640" height="360"></video>
+  
+
+<script src="{{url_for('static', filename='jouer.js')}}"></script>
+</body>
+</html>
