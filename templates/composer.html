@@ -28,7 +28,11 @@
       <input type="button" value="+" id="b3">
       <input type="button" value="SUPPR" id="b4">
       <input type="button" value="play" id="b5">
-      <input type="button" value="Save" id="save">  
+      <form action="/save" method="POST">
+      <input type="text" name="code_chor" id="code">
+      <input type="submit" value="Save">
+      </form>
+      <!--<input type="button" value="Save" id="save"> --> 
     </div>
     <div class="row4">
       <video id="video-player" controls width="640" height="360"></video>
