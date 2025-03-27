@@ -18,8 +18,8 @@ let len = 0
 let ids
 
 const videos = [
-  { src: 'equilibre.mp4', title: '1: equilibre' },
-  { src: 'pasdebourre.mp4', title: '2: pas de bourre' },
+  { src: 'equilibre.mp4', title: '1: équilibre' },
+  { src: 'pasdebourre.mp4', title: '2: pas de bourrée' },
   { src: 'pirouette.mp4', title: '3: pirouette' },
   { src: 'rouladed.mp4', title: '4: roulade a droite' },
   { src: 'rouladeg.mp4', title: '5: roulade a gauche' },
