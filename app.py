@@ -24,10 +24,6 @@ def index():
 
 @app.route("/composer")
 def composer(): 
-    user_name = request.form['username']
-    for x in videos_database:
-        if x["id_user"] == user_name:
-            x['bibli'].append({"id_chor" : len(x['bibli']) + 1, "code_chor" : "007"})
     return render_template("composer.html")
 
 @app.route("/consulter")
