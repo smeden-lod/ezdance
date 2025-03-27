@@ -11,6 +11,10 @@ with open(os.path.join(SITE_ROOT,"videos.json"), "r") as videos_database_file:
 
 with open(os.path.join(SITE_ROOT,"clips.json"), "r") as clips_database_file:
     clips_database = json.load(clips_database_file)
+
+def videos_database_write() -> bool:
+    with open(os.path.join(SITE_ROOT,"videos.json"), "w") as videos_database_file:
+        json.dump(user_database, videos_database, videos_database_file)
   
 
 @app.route("/")
