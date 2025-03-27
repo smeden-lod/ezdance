@@ -19,6 +19,7 @@ def index():
 
 @app.route("/composer")
 def composer(): 
+    videos_database.append({"id_chor" : len(videos_database) + 1, "code_chor" : "24537"})
     return render_template("composer.html")
 
 @app.route("/consulter")
