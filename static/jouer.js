@@ -19,7 +19,7 @@ const videos = [
 ];
 
     a = code_chor.textContent
-    b = a.split('')
+    b = a.split(''+'-')
     console.log(b)
 
  
