@@ -15,7 +15,6 @@ const curs = document.getElementById('curs')
 b2.addEventListener('click', bw)
 b3.addEventListener('click', fw)
 b4.addEventListener('click', sup)
-save.addEventListener('click', 'saving')
 
 let cur_ind = 0
 let len = 0
@@ -120,9 +119,4 @@ function sup(){
     cur_ind = 0
   }
   deco() 
-}
-
-function saving(){
-  fetch('composer');
-  return;
 }
