@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EzD:compose</title>
+<link rel="stylesheet" href="{{url_for('static', filename = 'ezdancing.css')}}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="/">.:accueil</a>
+  <h1>Composer une choré</h1>
+
+
+  <div class="wrapper">
+    <div class="row1">
+      <div id="video-list"></div>
+    </div>
+    <div class="row2">
+      <div id="scr"></div> 
+      <div id="curs"></div>
+    </div>
+    <div class="row3">
+      <input type="button" value="-" id="b2">
+      <input type="button" value="+" id="b3">
+      <input type="button" value="SUPPR" id="b4">
+      <input type="button" value="play" id="b5">
+      <form action="/save" method="POST">
+      <input type="text" name="code_chor" id="code">
+      <input type="submit" value="Save">
+      </form>
+      <!--<input type="button" value="Save" id="save"> --> 
+    </div>
+    <div class="row4">
+      <video id="video-player" controls width="640" height="360"></video>
+    </div>
+</div> 
+<script src="{{url_for('static', filename='app.js')}}"></script>
+</body>
+</html>
