@@ -7,7 +7,7 @@ const b2 = document.getElementById('b2')
 const b3 = document.getElementById('b3')
 const b4 = document.getElementById('b4')
 const playButton = document.getElementById('b5');
-const save = document.getElementById('save')
+const code = document.getElementById('code')
 
 const scr = document.getElementById('scr')
 const curs = document.getElementById('curs')
@@ -56,6 +56,7 @@ videos.forEach((video, index) => {
     b.splice(cur_ind - 1,0,Number(button.value)+1)
     console.log(b)
     scr.textContent = b.join('')
+    code.textContent = scr.textContent
     len += 1
     deco()
   });
